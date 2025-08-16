@@ -9,8 +9,8 @@ export const drawCard = (card, container) => {
 
     const image = document.createElement("img");
   
-    image.src = `assets/cartas/${card}.png`;
-  
+    image.src = `${import.meta.env.BASE_URL}assets/cartas/${card}.png`;
+
     image.classList.add("carta");
   
     container.appendChild(image);
