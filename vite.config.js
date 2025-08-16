@@ -6,13 +6,11 @@ export default defineConfig({
 });
 
 export const drawCard = (card, container) => {
-
     const image = document.createElement("img");
-  
-    image.src = `${import.meta.env.BASE_URL}assets/cartas/${card}.png`;
+
+    // ✅ Busca en /cartas directamente
+    image.src = `cartas/${card}.png`;
 
     image.classList.add("carta");
-  
     container.appendChild(image);
-  
-  };
+};
