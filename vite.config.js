@@ -9,7 +9,7 @@ export const drawCard = (card, container) => {
 
     const image = document.createElement("img");
   
-    image.src = `/Blackjack/assets/cartas/${card}.png`;
+    image.src = `assets/cartas/${card}.png`;
   
     image.classList.add("carta");
   
